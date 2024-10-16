@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno - Escola Nair Cunha de Aguiar</h1>
+    
+    <form id="cadastroForm">
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome_aluno" required>
+        
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+        
+        <label for="nome_mae">Nome da Mãe:</label>
+        <input type="text" id="nome_mae" name="nome_mae" required>
+        
+        <label for="nome_pai">Nome do Pai:</label>
+        <input type="text" id="nome_pai" name="nome_pai" required>
+
+        <!-- Outros campos do cadastro -->
+        
+        <label for="transporte">Usa Transporte Público:</label>
+        <select id="transporte" name="usa_transporte_publico">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        
+        <label for="tipo_transporte">Tipo de Transporte:</label>
+        <select id="tipo_transporte" name="tipo_transporte">
+            <option value="Ônibus">Ônibus</option>
+            <option value="Bicicleta">Bicicleta</option>
+            <option value="Moto">Moto</option>
+            <option value="A pé">A pé</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
